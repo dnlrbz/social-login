@@ -1,0 +1,21 @@
+<mat-card>
+  <mat-card-title>Login</mat-card-title>
+  <mat-card-content fxLayout="column" fxLayoutAlign="space-around center">
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input matInput type="email">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <input matInput type="password">
+    </mat-form-field>
+
+  </mat-card-content>
+  <mat-card-actions>
+    <div>
+      <button mat-raised-button>Login</button>
+      <button (click)="loginWithGoogle()" mat-raised-button class="google-login-btn">Google</button>
+    </div>
+  </mat-card-actions>
+</mat-card>
