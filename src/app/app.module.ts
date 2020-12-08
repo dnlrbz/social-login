@@ -36,7 +36,7 @@ import {AuthGuardService} from './auth-guard.service';
   providers: [{
     provide: 'SocialAuthServiceConfig',
     useValue: {
-      autoLogin: false,
+      autoLogin: true,
       providers: [
         {
           id: GoogleLoginProvider.PROVIDER_ID,
@@ -44,7 +44,8 @@ import {AuthGuardService} from './auth-guard.service';
         }
       ]
     }
-  }],
+  },
+    AuthGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
